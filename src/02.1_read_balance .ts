@@ -15,6 +15,7 @@ const walletAddress = getKeypairFromEnvironment("KEYPAIR"); //get keypair from o
 
 const balance = await connection.getBalance(walletAddress.publicKey);
 
+console.log("GET SOLANA BALANCE");
 console.log(
   `💰 The balance of ${walletAddress.publicKey} is : ${
     balance / LAMPORTS_PER_SOL
